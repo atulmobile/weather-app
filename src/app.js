@@ -19,6 +19,7 @@ hbs.registerPartials(partialsPath)
 // Setup static directory to serve
 app.use(express.static(publicDirectoryPath))
 
+
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather',
@@ -98,5 +99,5 @@ app.get('*', (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log(`Server is up on port ${port}`)
+    console.log(`Wow...Server is up on port ${port}`)
 })
